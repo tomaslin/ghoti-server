@@ -1,6 +1,6 @@
 package com.getghoti
 
-class ProjectTemplates {
+class Boilerplate {
 
 	Date dateCreated
 	Date lastUpdated

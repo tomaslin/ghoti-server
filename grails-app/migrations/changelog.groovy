@@ -1,3 +1,5 @@
 databaseChangeLog = {
-	include file: '2013-02-16-initial-db-setup.groovy'
+
+
+	include file: '2013-02-17-initial-db.groovy'
 }

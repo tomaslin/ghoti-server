@@ -13,6 +13,7 @@ hibernate {
 environments {
     development {
         dataSource {
+            dbCreate = 'create-drop'
             url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
         }
     }
@@ -23,7 +24,7 @@ environments {
     }
     production {
         dataSource {
-            dbCreate = "update"
+
             driverClassName = "org.postgresql.Driver"
             dialect = org.hibernate.dialect.PostgreSQLDialect
 

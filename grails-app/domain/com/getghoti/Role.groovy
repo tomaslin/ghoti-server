@@ -2,13 +2,14 @@ package com.getghoti
 
 class Role {
 
-	String authority
+    String authority
 
-	static mapping = {
-		cache true
-	}
+    static mapping = {
+        cache true
+        table "ghoti_role"
+    }
 
-	static constraints = {
-		authority blank: false, unique: true
-	}
+    static constraints = {
+        authority blank: false, unique: true
+    }
 }
