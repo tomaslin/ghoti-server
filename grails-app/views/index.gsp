@@ -64,6 +64,7 @@
 	<div class="four columns">
 		<h3>Installation</h3>
 		<p>Right click and save the client groovy file to your computer.</p>
+		<p>A Griffon version is in the works.</p>
 		<h3>Community</h3>
 		<ul class="disc">
 			<li>Github Repo: <a href="http://git.io/ghoti">http://git.io/ghoti</a></li>
