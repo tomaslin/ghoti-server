@@ -62,7 +62,6 @@ grails.hibernate.cache.queries = false
 environments {
     development {
         grails.logging.jul.usebridge = true
-        grails.plugin.databasemigration.createOnStart = true
     }
     production {
         grails.logging.jul.usebridge = false
@@ -99,5 +98,3 @@ grails.plugins.springsecurity.authority.className = 'com.getghoti.Role'
 grails.plugins.springsecurity.controllerAnnotations.staticRules = [
    '/console/**': ['ROLE_ADMIN']
 ]
-
-grails.plugin.databasemigration.updateOnStart = true

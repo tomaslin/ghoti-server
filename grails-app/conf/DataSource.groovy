@@ -13,13 +13,12 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = 'create-drop'
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:h2:devDb;MVCC=TRUE"
         }
     }
     test {
         dataSource {
-            url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:h2:devDb;MVCC=TRUE"
         }
     }
     production {
