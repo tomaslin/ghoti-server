@@ -1,0 +1,11 @@
+.head{ font-family: 'Bowlby One SC', cursive Arial, serif; font-weight: 400; font-size: 4em; margin-bottom: 4px; line-height:1; text-alight:bottom; }
+.subheader{ margin-top: 0px;}
+body{
+	background-image: url(../images/square_bg.png);
+}
+pre{
+	color: white;
+	background-color:black;
+	padding: 15px;
+	margin-bottom: 10px;
+}
