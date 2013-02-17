@@ -13,17 +13,19 @@ hibernate {
 environments {
     development {
         dataSource {
+            dbCreate = "create-drop"
             url = "jdbc:h2:devDb;MVCC=TRUE"
         }
     }
     test {
         dataSource {
+            dbCreate = "update"
             url = "jdbc:h2:devDb;MVCC=TRUE"
         }
     }
     production {
         dataSource {
-
+            dbCreate = "update"
             driverClassName = "org.postgresql.Driver"
             dialect = org.hibernate.dialect.PostgreSQLDialect
 
