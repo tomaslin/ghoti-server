@@ -22,7 +22,6 @@ grails.project.dependency.resolution = {
 
         mavenLocal()
         mavenCentral()
-
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
@@ -32,7 +31,7 @@ grails.project.dependency.resolution = {
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-
+        test "org.spockframework:spock-grails-support:0.7-groovy-2.0"
         runtime 'postgresql:postgresql:8.4-702.jdbc3'
     }
 
@@ -45,6 +44,9 @@ grails.project.dependency.resolution = {
         compile ':cache:1.0.1'
         compile ":console:1.2"
         compile ":recaptcha:0.5.3"
-        test ":spock:0.7"
+
+        test(":spock:0.7") {
+            exclude "spock-grails-support"
+        }
     }
 }
